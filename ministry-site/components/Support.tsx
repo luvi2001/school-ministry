@@ -13,10 +13,27 @@ export default function Support() {
   const headerRef = useScrollReveal()
   const [submitted, setSubmitted] = useState(false)
   const [form, setForm] = useState({ name: '', email: '', message: '', interest: '' })
+  const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    setSubmitted(true)
+    setLoading(true)
+    setError('')
+
+    const res = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    })
+
+    setLoading(false)
+
+    if (res.ok) {
+      setSubmitted(true)
+    } else {
+      setError('Something went wrong. Please try again or contact us directly.')
+    }
   }
 
   return (
@@ -107,10 +124,13 @@ export default function Support() {
                 </div>
                 <button
                   type="submit"
-                  className="w-full py-3 bg-accent hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg hover:shadow-accent/30"
+                  disabled={loading}
+                  className="w-full py-3 bg-accent hover:bg-orange-600 text-white font-semibold rounded-xl transition-all hover:shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  Send Message
+                  {loading ? 'Sending…' : 'Send Message'}
                 </button>
+
+                {error && <p className="text-red-500 text-sm mt-2">{error}</p>}
               </form>
             )}
           </div>
