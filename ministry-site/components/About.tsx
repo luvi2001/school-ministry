@@ -87,8 +87,8 @@ export default function About() {
         <div ref={useScrollReveal()} className="animate-on-scroll mt-20">
           <h3 className="font-body text-3xl text-stone-800 mb-8 font-medium text-center">Our Ministry in Action</h3>
 
-          <div className="relative rounded-2xl overflow-hidden bg-secondary shadow-2xl border border-accent/20 max-w-4xl mx-auto">
-            <div className="relative h-96 md:h-[500px]">
+          <div className="rounded-2xl overflow-hidden bg-black shadow-2xl border border-accent/20 max-w-4xl mx-auto">
+            <div className="aspect-video w-full">
               <video
                 src="/ministry-action.mp4"
                 controls
@@ -96,10 +96,8 @@ export default function About() {
                 muted
                 loop
                 playsInline
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain"
               />
-              {/* Optional dark gradient layout match overlay — ignores pointer events so video controls remain clickable */}
-              <div className="absolute inset-0 bg-gradient-to-t from-secondary via-transparent to-transparent opacity-20 pointer-events-none" />
             </div>
           </div>
         </div>
