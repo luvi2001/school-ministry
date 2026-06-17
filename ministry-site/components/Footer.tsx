@@ -8,7 +8,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <div>
                 <p className="font-body text-white font-semibold text-lg leading-none">COLOMBO SCHOOL MINISTRY</p>
-                <p className="text-accent text-xs tracking-widest uppercase">Youth For Christ</p>
+                <p className="text-accent text-xs tracking-widest uppercase">cmb youthlight</p>
               </div>
             </div>
             <p className="text-white/60 text-sm leading-relaxed">

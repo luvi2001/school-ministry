@@ -166,24 +166,22 @@ export default function Support() {
             </div>
 
             {/* Bank details */}
+            {/* Bank details — hidden, sent via email instead */}
             <div className="bg-accent/10 border border-accent/20 rounded-2xl p-7">
-              <h4 className="font-body text-2xl text-secondary mb-2 font-medium">Support Us</h4>
-              <p className="text-secondary/60 text-sm mb-5">All donations go directly to field ministry — outreach, programs, and staff support.</p>
-              <div className="space-y-3 text-sm">
-                {[
-                  ['Bank', 'Commercial Bank'],
-                  ['Account Name', 'Youth for Christ '],
-                  ['Account No.', '1470021452'],
-                  ['Branch', '98,high level road Kirulapone'],
-                  ['Switch code', 'CCEY LKLX'],
-                ].map(([label, val]) => (
-                  <div key={label} className="flex justify-between items-center border-b border-accent/20 pb-2 last:border-0 last:pb-0">
-                    <span className="text-secondary/60">{label}</span>
-                    <span className="text-secondary font-medium">{val}</span>
-                  </div>
-                ))}
+              <h4 className="font-body text-2xl text-secondary mb-2 font-medium">Support Us Financially</h4>
+              <p className="text-secondary/60 text-sm leading-relaxed mb-4">
+                All donations go directly to field ministry — outreach, programs, and staff support.
+              </p>
+              <div className="bg-white rounded-xl border border-accent/20 p-5 text-center">
+                <span className="text-3xl mb-3 block">📧</span>
+                <p className="text-secondary font-medium text-sm mb-1">Bank details sent privately</p>
+                <p className="text-secondary/60 text-xs leading-relaxed">
+                  Fill out the contact form and we'll email you our bank transfer details along with a personal thank-you note.
+                </p>
               </div>
-              <p className="text-accent text-xs mt-4 italic">* For overseas donors: please contact us for USD/international transfer details.</p>
+              <p className="text-accent text-xs mt-4 italic text-center">
+                * For overseas donors, reply to the email for USD/international transfer details.
+              </p>
             </div>
           </div>
         </div>

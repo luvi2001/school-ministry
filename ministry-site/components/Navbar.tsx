@@ -29,12 +29,11 @@ export default function Navbar() {
         <a href="#hero" className="flex items-center gap-4 group">
           {/* Two stacked logos */}
           <div className="flex flex-col gap-1">
-            <img src="/sm-logo.png" alt="School Ministry" className="h-10 w-auto" />
-            <img src="/tfc-logo.png" alt="Youth For Christ" className="h-8 w-auto" />
+            <img src="/sm-logo.png" alt="School Ministry" className="h-12 w-auto" />
           </div>
           <div>
             <p className="font-body text-white font-semibold text-2xl uppercase leading-none">Colombo School Ministry</p>
-            <p className="font-body text-accent text-xl tracking-widest  leading-none mt-4">Youth For Christ</p>
+            <p className="font-body text-accent text-xl tracking-widest uppercase leading-none mt-4">Cmb youthlight</p>
           </div>
         </a>
 
