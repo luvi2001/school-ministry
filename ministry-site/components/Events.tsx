@@ -14,19 +14,6 @@ const events = [
     typeColor: 'bg-amber-100 text-amber-700',
 desc: 'An evangelism camp with the main reason to spread the Gospel of Jesus Christ. Targeted at teenagers aged 12 to 19, this camp aims to share God’s love with the next generation through worship, personal testimonies, and a clear call to faith—expecting 100+ young people to join us.',    icon: '🔥',
   },
-  {
-    date: 'July 26, 2025',
-    isRange: false,
-    startDay: '26',
-    endDay: '',
-    month: 'Jul',
-    title: 'Back-to-School Supplies Drive',
-    location: 'Kirulapone & Wellawatte',
-    type: 'Outreach',
-    typeColor: 'bg-teal-100 text-teal-700',
-    desc: 'Distributing school kits to 80 children heading back to school. Volunteers needed — meals and stationery packs sponsored.',
-    icon: '📚',
-  },
 ]
 
 export default function Events() {
