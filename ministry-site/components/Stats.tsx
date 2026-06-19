@@ -77,7 +77,7 @@ export default function Stats() {
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-accent text-sm tracking-[0.25em] uppercase font-medium mb-3">By The Numbers</p>
+          <p className="text-accent text-sm tracking-[0.25em] uppercase font-medium mb-3">This year (2026)</p>
           <h2 className="font-body text-5xl md:text-6xl font-light text-secondary mb-4">
             Our <em className="text-accent not-italic font-medium">Impact</em>
           </h2>
@@ -130,7 +130,7 @@ export default function Stats() {
           {/* Right Column: Journey + Slideshow */}
           <div className="space-y-10">
             <div>
-              <h3 className="font-display text-3xl text-secondary mb-6 font-medium">Our Journey</h3>
+              <h3 className="font-display text-3xl text-secondary mb-6 font-medium">Our Actions From 2022</h3>
               <div className="relative border-l-2 border-accent/20 pl-6 space-y-5">
                 {milestones.map((m, i) => (
                   <div key={i} className="relative">

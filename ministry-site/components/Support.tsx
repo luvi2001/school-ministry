@@ -145,7 +145,7 @@ export default function Support() {
                   <span className="mt-0.5 text-accent">📈</span>
                   <div>
                     <p className="text-white/60 text-xs uppercase tracking-widest mb-0.5">Base Location</p>
-                    <p className="text-white/90">Youth For Christ NHQ, Western Province, Sri Lanka</p>
+                    <p className="text-white/90">Youth For Christ Sri Lanka</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
